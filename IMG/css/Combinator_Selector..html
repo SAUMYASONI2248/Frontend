@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* descendent direct child as well as nested child */
+        section div{
+            background-color: yellow;
+        }
+        /* child selector target only direct child */
+
+        section>div{
+            background-color: brown;
+        }
+        /* General sibling means all elements after the closing tag */
+
+        section~div{
+            background-color: aqua;
+        }
+
+        /* adjacent sibling means element just after the closing tag of targeted elememt */
+    </style>
+</head>
+
+<h1 align="center"> LEARN COMBINATOR SELECTOR</h1>
+
+     <!-- <h2 align="center">Empty space</h2>
+     <h3>~</h3>
+    
+     <h3>></h3>
+     
+     <h3>+</h3> -->
+
+     <!-- descendent ,child, General sibling, adjacent Sibling -->
+<body>
+    <div>Div 1</div>
+    
+    <section>
+        <div>Div 2</div>
+        <div>div 3</div>
+        <article>
+            <div>Div 4</div>
+            <div>Div 5</div>
+        </article>
+        <div>Div 6</div>
+    </section>
+    <h2>Hello</h2>
+        <div>div 7</div>
+    <div>Div 8</div>
+
+    <p>para 1</p>
+    <div>div 9</div>
+</body>
+</html>
