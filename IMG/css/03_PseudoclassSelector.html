@@ -6,27 +6,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-       #btn1{
-        background-color: purple;
-        border: none;
-        padding: 10px;
-       }
+        #btn1 {
+            background-color: purple;
+            border: none;
+            padding: 10px;
+        }
 
-       #btn1:hover{
-        background-color: blue;
-        color: white;
-        transform : scale(1.1);
-        transition: 0.2s;
-       }
+        #btn1:hover {
+            background-color: blue;
+            color: white;
+            transform: scale(1.1);
+            transition: 0.2s;
+        }
 
-       a:visited{
-        color: cornflowerblue;
-       }
+        a:link{
+            color: green;
+        }
 
-       a:active{
-        color: aqua;
-       }
+        a:visited {
+            color: cornflowerblue;
+        }
 
+        a:active {
+            color: aqua;
+        }
+        
+        ul>li:first-child{
+            background-color: yellow;
+        }
+
+         ul>li:nth-child(3){
+            background-color: lightgreen;
+
+        }
+
+        ul>li:last-child{
+            background-color: lightblue;
+        }
+
+        main>div:first-of-type{
+            background-color: aqua;
+        }
+        
+        main>div:last-of-type{
+            background-color: blue;
+        }
+
+        main>div:nth-last-of-type(2){
+            background-color: rgb(80, 37, 119);
+        }
+       
+        
     </style>
 </head>
 
@@ -38,12 +68,13 @@
     2) :link
     3) :active
     4) :visited
-    5) :first-letter
-    6) :before
-    7) :after
-    8) :selection
-    9) :marker
-    10) :first-line 
+    5) :first-child
+    10) :first-line
+    11) :last-child
+    12) :nth-child()
+    13) :first-of-type
+    14) :last-of-type
+    15 :nth-of-type() 
     
     
     -->
@@ -53,8 +84,28 @@
     </button>
 
     <a href="./Combinator_Selector..html">New link</a>
+    <a href="./example.html">New link </a>
 
+    
+         <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JS</li>
+            <li>REACT</li>
+            <li>TAILWIND</li>
+         </ul>
 
+         <main>
+            <section>Section1</section>
+            <aside>aside1</aside>
+            <section>Section2</section>
+            <div>Div 1</div>
+            <aside>aside 2</aside>
+            <section>Section 3</section>
+            <div>Div 2</div>
+            <div>Div 3</div>
+            <section>Section 4</section>
+         </main>
 
 </body>
 
