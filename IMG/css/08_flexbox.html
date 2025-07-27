@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+
+        }
+        #flexcontainer{
+            height: 80vh;
+            width: 100%;
+            background-color: lightblue;
+            display: flex;
+            flex-direction: row;
+            /* flex-start, flex end, center,space-between,space-evenly,space-around */
+            justify-content: space-around;
+            /* flex-start,flex-end,center */
+            align-items: center;
+            /* no-wrap,wrap-reverse */
+            flex-wrap: wrap;
+
+        }
+        .flexitem{
+            height: 100px;
+            width: 100px;
+            background-color: brown;
+            border: 5px solid white;
+            color: white;
+            font-size: 50px;
+
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Learn CSS flex-Box</h1>
+
+    <main id="flexcontainer">
+        <div class="flexitem">1</div>
+        <div class="flexitem">2</div>
+        <div class="flexitem">3</div>
+         <div class="flexitem">4</div>
+        <div class="flexitem">5</div>
+        <div class="flexitem">6</div>
+         <div class="flexitem">7</div>
+        <div class="flexitem">8</div>
+        <div class="flexitem">9</div>
+         <div class="flexitem">10</div>
+        <div class="flexitem">11</div>
+        <div class="flexitem">12</div>
+    </main>
+</body>
+</html>
